@@ -10,15 +10,26 @@
 
 html,
 body,
-#root {
+#root,
+.App {
     width: 100vw;
     height: 100vh;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    padding: 12px;
+    background-color: #bb8aff;
+    border-radius: 6px;
 }
